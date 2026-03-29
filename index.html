@@ -32,7 +32,7 @@ h1,h2,h3,h4{font-weight:700;line-height:1.25}
 a{text-decoration:none;color:inherit}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 
-/* ===== NAV ===== */
+/* NAV */
 .nav{background:var(--white);padding:16px 0;position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,0,0,.04)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
 .logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:var(--navy)}
@@ -43,7 +43,6 @@ a{text-decoration:none;color:inherit}
 .nav-right{display:flex;align-items:center;gap:12px}
 .nav-search{display:flex;align-items:center;gap:8px;background:var(--bg);border-radius:10px;padding:10px 16px;font-size:.85rem;color:var(--text-light);border:none;cursor:pointer;transition:background .3s}
 .nav-search:hover{background:#dde5ef}
-.nav-search i{font-size:.8rem}
 .nav-cta{background:var(--navy);color:var(--white);padding:10px 24px;border-radius:var(--btn-radius);font-size:.85rem;font-weight:600;border:none;cursor:pointer;transition:all .3s}
 .nav-cta:hover{background:#13315C;transform:translateY(-1px)}
 .burger{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--text)}
@@ -52,15 +51,13 @@ a{text-decoration:none;color:inherit}
 .mobile-menu a{font-size:1.2rem;font-weight:600;color:var(--text)}
 .mobile-close{position:absolute;top:20px;right:24px;font-size:2rem;cursor:pointer;background:none;border:none;color:var(--text)}
 
-/* ===== HERO ===== */
+/* HERO */
 .hero{padding:32px 0 0}
-.hero-card{background:var(--white);border-radius:24px;overflow:hidden;position:relative;max-width:1200px;margin:0 auto}
-.hero-image{width:100%;height:480px;background:linear-gradient(135deg,#1a6b4a 0%,#2d8f65 30%,#4ab384 60%,#87ceab 100%);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hero-image::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 480'%3E%3Cpath fill='%231a5e42' d='M0,320 Q200,200 400,280 T800,200 T1200,300 T1440,250 L1440,480 L0,480Z' opacity='0.3'/%3E%3Cpath fill='%23145038' d='M0,380 Q300,300 600,360 T1200,320 T1440,350 L1440,480 L0,480Z' opacity='0.4'/%3E%3C/svg%3E") center/cover no-repeat}
-.hero-image::after{content:'';position:absolute;top:20%;right:15%;width:120px;height:120px;background:rgba(255,255,255,.08);border-radius:50%;filter:blur(40px)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.35) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:48px}
-.hero-title{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,5.5rem);color:var(--white);font-weight:800;letter-spacing:-2px;text-transform:uppercase;line-height:1;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,.2)}
-.hero-subtitle{color:rgba(255,255,255,.85);font-size:1rem;max-width:480px;margin-bottom:28px;line-height:1.6}
+.hero-card{background:var(--white);border-radius:24px;overflow:hidden;max-width:1200px;margin:0 auto}
+.hero-image{width:100%;height:500px;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1400&h=600&fit=crop&q=80') center/cover no-repeat;position:relative;overflow:hidden}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,rgba(0,0,0,.15) 40%,transparent 70%);display:flex;flex-direction:column;justify-content:flex-end;padding:48px}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,5.5rem);color:var(--white);font-weight:800;letter-spacing:-2px;text-transform:uppercase;line-height:1;margin-bottom:16px;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+.hero-subtitle{color:rgba(255,255,255,.9);font-size:1rem;max-width:480px;margin-bottom:28px;line-height:1.6}
 .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:var(--btn-radius);font-size:.9rem;font-weight:600;border:none;cursor:pointer;transition:all .3s;font-family:'Plus Jakarta Sans',sans-serif}
 .btn-dark{background:var(--navy);color:var(--white)}
@@ -72,7 +69,7 @@ a{text-decoration:none;color:inherit}
 .btn-outline-dark{background:transparent;color:var(--navy);border:2px solid var(--navy)}
 .btn-outline-dark:hover{background:var(--navy);color:var(--white)}
 
-/* ===== WHY CHOOSE US ===== */
+/* WHY */
 .why{padding:80px 0}
 .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .why-left h2{font-size:2rem;margin-bottom:16px;color:var(--navy)}
@@ -95,7 +92,7 @@ a{text-decoration:none;color:inherit}
 .why-card h3{font-size:1rem;margin-bottom:4px;color:var(--navy)}
 .why-card p{font-size:.82rem;color:var(--text-light);line-height:1.5}
 
-/* ===== DESTINATIONS ===== */
+/* DESTINATIONS */
 .destinations{padding:0 0 80px}
 .dest-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:32px}
 .dest-header h2{font-size:2rem;color:var(--navy)}
@@ -104,22 +101,18 @@ a{text-decoration:none;color:inherit}
 .dest-card{background:var(--white);border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--card-shadow);transition:transform .3s,box-shadow .3s;cursor:pointer}
 .dest-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(0,0,0,.12)}
 .dest-img{width:100%;height:180px;position:relative;overflow:hidden}
-.dest-img-bg{width:100%;height:100%;display:block}
-.dest-card:nth-child(1) .dest-img{background:linear-gradient(135deg,#00b4d8,#0077b6)}
-.dest-card:nth-child(2) .dest-img{background:linear-gradient(135deg,#e9c46a,#e76f51)}
-.dest-card:nth-child(3) .dest-img{background:linear-gradient(135deg,#8338ec,#3a86ff)}
-.dest-card:nth-child(4) .dest-img{background:linear-gradient(135deg,#06d6a0,#028090)}
-.dest-card:nth-child(5) .dest-img{background:linear-gradient(135deg,#f72585,#b5179e)}
-.dest-card:nth-child(6) .dest-img{background:linear-gradient(135deg,#ff6b35,#d62828)}
-.dest-card:nth-child(7) .dest-img{background:linear-gradient(135deg,#4cc9f0,#4361ee)}
-.dest-card:nth-child(8) .dest-img{background:linear-gradient(135deg,#2dc653,#007f5f)}
+.dest-card:nth-child(1) .dest-img{background:url('https://images.unsplash.com/photo-1589561253898-768105ca91a8?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(2) .dest-img{background:url('https://images.unsplash.com/photo-1539768942893-daf53e736b68?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(3) .dest-img{background:url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(4) .dest-img{background:url('https://images.unsplash.com/photo-1528181304800-259b08848526?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(5) .dest-img{background:url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(6) .dest-img{background:url('https://images.unsplash.com/photo-1500759285222-a95626b934cb?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(7) .dest-img{background:url('https://images.unsplash.com/photo-1569700993571-c23e7a0c71f2?w=600&h=400&fit=crop&q=80') center/cover}
+.dest-card:nth-child(8) .dest-img{background:url('https://images.unsplash.com/photo-1588598198321-9735fd52e0a3?w=600&h=400&fit=crop&q=80') center/cover}
 .dest-price{position:absolute;top:12px;left:12px;background:var(--white);border-radius:8px;padding:4px 12px;font-size:.75rem;font-weight:700;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.dest-emoji{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:3rem;opacity:.3}
 .dest-info{padding:16px 18px}
 .dest-name{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px}
 .dest-meta{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--text-light)}
-.dest-meta i{color:var(--gold);font-size:.65rem}
-.dest-rating{display:flex;align-items:center;gap:4px}
 .dest-rating i{color:var(--gold);font-size:.6rem}
 .dest-bottom{display:flex;justify-content:space-between;align-items:center}
 .dest-bottom .btn{padding:10px 20px;font-size:.8rem}
@@ -127,50 +120,64 @@ a{text-decoration:none;color:inherit}
 .dest-arrows button{width:40px;height:40px;border-radius:50%;border:2px solid #D1D5DB;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;color:var(--text)}
 .dest-arrows button:hover{border-color:var(--navy);background:var(--navy);color:var(--white)}
 
-/* ===== TOUR PACKAGES ===== */
+/* PACKAGES */
 .packages{padding:0 0 80px}
 .pkg-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
-.pkg-main{background:var(--navy);border-radius:var(--card-radius);padding:40px 32px;display:flex;flex-direction:column;justify-content:space-between;color:var(--white);min-height:280px}
+.pkg-main{background:url('https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=800&h=500&fit=crop&q=80') center/cover;border-radius:var(--card-radius);padding:0;display:flex;flex-direction:column;justify-content:flex-end;min-height:320px;position:relative;overflow:hidden}
+.pkg-main::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(11,37,69,.85) 0%,rgba(11,37,69,.4) 50%,transparent)}
+.pkg-main-content{position:relative;z-index:1;padding:40px 32px;color:var(--white)}
 .pkg-main h2{font-size:1.8rem;margin-bottom:8px;font-family:'Playfair Display',serif}
-.pkg-main p{color:rgba(255,255,255,.7);font-size:.9rem;line-height:1.6;margin-bottom:24px}
+.pkg-main p{color:rgba(255,255,255,.8);font-size:.9rem;line-height:1.6;margin-bottom:24px}
 .pkg-main .btn{background:var(--white);color:var(--navy);align-self:flex-start}
 .pkg-main .btn:hover{background:var(--bg)}
-.pkg-card{background:var(--white);border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--card-shadow);transition:transform .3s}
+.pkg-card{background:var(--white);border-radius:var(--card-radius);overflow:hidden;box-shadow:var(--card-shadow);transition:transform .3s;cursor:pointer}
 .pkg-card:hover{transform:translateY(-4px)}
-.pkg-card-img{height:140px;position:relative;overflow:hidden}
-.pkg-card:nth-child(2) .pkg-card-img{background:linear-gradient(135deg,#0ea5e9,#2563eb)}
-.pkg-card:nth-child(3) .pkg-card-img{background:linear-gradient(135deg,#f97316,#ef4444)}
-.pkg-card-emoji{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:2.5rem;opacity:.3}
-.pkg-card-icon{position:absolute;top:16px;left:16px;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--navy)}
+.pkg-card-img{height:160px;position:relative;overflow:hidden}
+.pkg-card:nth-child(2) .pkg-card-img{background:url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=300&fit=crop&q=80') center/cover}
+.pkg-card:nth-child(3) .pkg-card-img{background:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=300&fit=crop&q=80') center/cover}
+.pkg-card-icon{position:absolute;top:16px;left:16px;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .pkg-card-body{padding:20px}
 .pkg-card-body h3{font-size:1.05rem;margin-bottom:8px;color:var(--navy)}
 .pkg-card-body p{font-size:.82rem;color:var(--text-light);line-height:1.5}
 
-/* ===== BOOKING STEPS ===== */
+/* STEPS */
 .steps{padding:0 0 80px}
 .steps h2{font-size:2rem;color:var(--navy);margin-bottom:48px}
 .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .step-card{display:flex;gap:20px;align-items:flex-start}
-.step-icon{width:56px;height:56px;border-radius:16px;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;color:var(--navy);box-shadow:var(--card-shadow)}
+.step-num{width:56px;height:56px;border-radius:16px;background:var(--white);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.5rem;font-weight:800;color:var(--navy);box-shadow:var(--card-shadow);font-family:'Playfair Display',serif}
 .step-card h3{font-size:1rem;margin-bottom:4px;color:var(--navy)}
 .step-card p{font-size:.82rem;color:var(--text-light);line-height:1.5}
 
-/* ===== TEAM ===== */
+/* GALLERY */
+.gallery{padding:0 0 80px}
+.gallery h2{font-size:2rem;color:var(--navy);margin-bottom:12px}
+.gallery>p{color:var(--text-light);margin-bottom:32px;font-size:.95rem}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:200px 200px;gap:16px}
+.gallery-item{border-radius:var(--card-radius);overflow:hidden;position:relative;transition:transform .3s}
+.gallery-item:hover{transform:scale(1.02)}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
+.gallery-item:nth-child(1){grid-column:1/3;grid-row:1/3}
+.gallery-item:nth-child(2){grid-column:3/4}
+.gallery-item:nth-child(3){grid-column:4/5}
+.gallery-item:nth-child(4){grid-column:3/4}
+.gallery-item:nth-child(5){grid-column:4/5}
+.gallery-label{position:absolute;bottom:12px;left:12px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);color:var(--white);font-size:.75rem;font-weight:600;padding:6px 14px;border-radius:8px}
+
+/* TEAM */
 .team{padding:0 0 80px}
 .team h2{font-size:2rem;color:var(--navy);margin-bottom:12px}
 .team>p{color:var(--text-light);margin-bottom:40px;font-size:.95rem}
 .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .team-card{background:var(--white);border-radius:var(--card-radius);padding:32px 24px;text-align:center;box-shadow:var(--card-shadow);transition:transform .3s}
 .team-card:hover{transform:translateY(-4px)}
-.team-avatar{width:96px;height:96px;border-radius:50%;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2.4rem}
-.team-card:nth-child(1) .team-avatar{background:linear-gradient(135deg,#ffecd2,#fcb69f)}
-.team-card:nth-child(2) .team-avatar{background:linear-gradient(135deg,#a1c4fd,#c2e9fb)}
-.team-card:nth-child(3) .team-avatar{background:linear-gradient(135deg,#d4fc79,#96e6a1)}
+.team-avatar{width:110px;height:110px;border-radius:50%;margin:0 auto 20px;overflow:hidden;border:3px solid var(--bg)}
+.team-avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .team-card h3{font-size:1.1rem;color:var(--navy);margin-bottom:4px}
 .team-role{font-size:.8rem;color:var(--accent);font-weight:600;margin-bottom:12px}
 .team-card>p{font-size:.82rem;color:var(--text-light);line-height:1.5}
 
-/* ===== REVIEWS ===== */
+/* REVIEWS */
 .reviews{padding:0 0 80px}
 .reviews h2{font-size:2rem;color:var(--navy);margin-bottom:12px}
 .reviews>p{color:var(--text-light);margin-bottom:40px;font-size:.95rem}
@@ -180,52 +187,51 @@ a{text-decoration:none;color:inherit}
 .review-stars{color:var(--gold);font-size:.85rem;margin-bottom:14px;letter-spacing:1px}
 .review-text{font-size:.88rem;color:var(--text);line-height:1.65;margin-bottom:20px}
 .review-author{display:flex;align-items:center;gap:12px}
-.review-ava{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-light));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-size:.8rem;flex-shrink:0}
+.review-ava{width:40px;height:40px;border-radius:50%;overflow:hidden;flex-shrink:0}
+.review-ava img{width:100%;height:100%;object-fit:cover}
 .review-name{font-weight:600;font-size:.85rem;color:var(--navy)}
 .review-date{font-size:.72rem;color:var(--text-light)}
 .review-quote{position:absolute;top:16px;right:20px;font-size:2.5rem;color:var(--accent);opacity:.1;font-family:Georgia,serif;line-height:1}
-.reviews-more{text-align:center;margin-top:32px}
 
-/* ===== CTA ===== */
+/* CTA */
 .cta{padding:0 0 80px}
 .cta-card{background:var(--white);border-radius:24px;overflow:hidden;box-shadow:var(--card-shadow)}
-.cta-inner{display:grid;grid-template-columns:1fr 1fr;min-height:400px}
+.cta-inner{display:grid;grid-template-columns:1fr 1fr;min-height:420px}
 .cta-left{background:var(--navy);padding:56px 48px;display:flex;flex-direction:column;justify-content:center;color:var(--white);position:relative;overflow:hidden}
 .cta-left::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:rgba(255,255,255,.04);border-radius:50%}
-.cta-left::after{content:'';position:absolute;bottom:-60px;left:-30px;width:160px;height:160px;background:rgba(198,146,42,.08);border-radius:50%}
 .cta-left h2{font-size:2rem;font-family:'Playfair Display',serif;margin-bottom:16px;position:relative;z-index:1}
-.cta-left p{color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:32px;position:relative;z-index:1;font-size:.95rem}
+.cta-left>p{color:rgba(255,255,255,.7);line-height:1.7;margin-bottom:32px;position:relative;z-index:1;font-size:.95rem}
 .cta-form{display:flex;flex-direction:column;gap:14px;position:relative;z-index:1}
 .cta-form input,.cta-form textarea{padding:14px 18px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:var(--white);font-size:.9rem;font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .3s}
 .cta-form input:focus,.cta-form textarea:focus{border-color:var(--gold)}
 .cta-form input::placeholder,.cta-form textarea::placeholder{color:rgba(255,255,255,.4)}
 .cta-form textarea{min-height:80px;resize:vertical}
 .cta-form .btn{justify-content:center}
-.cta-right{background:linear-gradient(135deg,#2D6A4F,#1a5e42,#145038);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;padding:48px;position:relative;overflow:hidden}
-.cta-right::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Ccircle cx='100' cy='80' r='60' fill='rgba(255,255,255,0.03)'/%3E%3Ccircle cx='450' cy='300' r='90' fill='rgba(255,255,255,0.03)'/%3E%3Ccircle cx='300' cy='150' r='40' fill='rgba(255,255,255,0.02)'/%3E%3C/svg%3E") center/cover}
-.cta-contact{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border-radius:16px;padding:20px 28px;width:100%;max-width:320px;transition:background .3s}
-.cta-contact:hover{background:rgba(255,255,255,.18)}
+.cta-right{background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800&h=600&fit=crop&q=80') center/cover;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:24px;padding:48px;position:relative;overflow:hidden}
+.cta-right::before{content:'';position:absolute;inset:0;background:rgba(11,37,69,.65)}
+.cta-contact{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border-radius:16px;padding:20px 28px;width:100%;max-width:320px;transition:background .3s;position:relative;z-index:1}
+.cta-contact:hover{background:rgba(255,255,255,.22)}
 .cta-contact-icon{width:48px;height:48px;border-radius:14px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:var(--white);flex-shrink:0}
 .cta-contact-text{color:var(--white)}
 .cta-contact-text span{display:block;font-size:.75rem;opacity:.6;margin-bottom:2px}
 .cta-contact-text a{font-size:1rem;font-weight:600;color:var(--white)}
 
-/* ===== FOOTER ===== */
-.footer{background:var(--white);border-radius:24px 24px 0 0;padding:40px 24px;margin-top:0}
+/* FOOTER */
+.footer{background:var(--white);border-radius:24px 24px 0 0;padding:40px 24px}
 .footer-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer p{color:var(--text-light);font-size:.85rem}
 .footer-links{display:flex;gap:24px}
 .footer-links a{color:var(--text-light);font-size:.85rem;transition:color .3s}
 .footer-links a:hover{color:var(--navy)}
 
-/* ===== SCROLL ANIMATIONS ===== */
+/* ANIMATIONS */
 .reveal{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.16,1,.3,1)}
 .reveal.visible{opacity:1;transform:translateY(0)}
 .reveal-d1{transition-delay:.1s}
 .reveal-d2{transition-delay:.2s}
 .reveal-d3{transition-delay:.25s}
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media(max-width:1024px){
   .why-grid{grid-template-columns:1fr;gap:40px}
   .dest-grid{grid-template-columns:repeat(2,1fr)}
@@ -233,11 +239,13 @@ a{text-decoration:none;color:inherit}
   .cta-inner{grid-template-columns:1fr}
   .cta-right{padding:32px}
   .reviews-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gallery-item:nth-child(1){grid-column:1/2;grid-row:1/2}
 }
 @media(max-width:768px){
   .nav-links,.nav-search{display:none}
   .burger{display:block}
-  .hero-image{height:320px}
+  .hero-image{height:340px}
   .hero-title{font-size:2.5rem}
   .dest-grid{grid-template-columns:1fr 1fr}
   .steps-grid{grid-template-columns:1fr}
@@ -246,10 +254,12 @@ a{text-decoration:none;color:inherit}
   .why-stats{flex-wrap:wrap;gap:20px}
   .dest-header{flex-direction:column;align-items:flex-start;gap:8px}
   .dest-header p{text-align:left}
+  .gallery-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:480px){
   .dest-grid{grid-template-columns:1fr}
   .hero-overlay{padding:24px}
+  .gallery-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -302,7 +312,7 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- WHY -->
 <section class="why" id="why">
   <div class="container">
     <div class="why-grid">
@@ -369,113 +379,89 @@ a{text-decoration:none;color:inherit}
     <div class="dest-grid">
       <div class="dest-card reveal" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🏖️</div>
           <div class="dest-price">от ₽35 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Турция</div>
           <div class="dest-meta">
-            <span>Пляжный отдых</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span> ·
-            <span><i class="fas fa-map-pin"></i> Анталья</span>
+            Пляжный отдых · <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span> · <i class="fas fa-map-pin"></i> Анталья
           </div>
         </div>
       </div>
       <div class="dest-card reveal reveal-d1" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🐪</div>
           <div class="dest-price">от ₽45 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Египет</div>
           <div class="dest-meta">
-            <span>Красное море</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.8</span> ·
-            <span><i class="fas fa-map-pin"></i> Хургада</span>
+            Красное море · <span class="dest-rating"><i class="fas fa-star"></i> 4.8</span> · <i class="fas fa-map-pin"></i> Хургада
           </div>
         </div>
       </div>
       <div class="dest-card reveal reveal-d2" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🏙️</div>
           <div class="dest-price">от ₽55 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">ОАЭ</div>
           <div class="dest-meta">
-            <span>Роскошь и шопинг</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span> ·
-            <span><i class="fas fa-map-pin"></i> Дубай</span>
+            Роскошь и шопинг · <span class="dest-rating"><i class="fas fa-star"></i> 4.9</span> · <i class="fas fa-map-pin"></i> Дубай
           </div>
         </div>
       </div>
       <div class="dest-card reveal reveal-d3" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🐘</div>
           <div class="dest-price">от ₽60 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Таиланд</div>
           <div class="dest-meta">
-            <span>Экзотика</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.7</span> ·
-            <span><i class="fas fa-map-pin"></i> Пхукет</span>
+            Экзотика · <span class="dest-rating"><i class="fas fa-star"></i> 4.7</span> · <i class="fas fa-map-pin"></i> Пхукет
           </div>
         </div>
       </div>
       <div class="dest-card reveal" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🏝️</div>
           <div class="dest-price">от ₽120 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Мальдивы</div>
           <div class="dest-meta">
-            <span>Рай на земле</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 5.0</span> ·
-            <span><i class="fas fa-map-pin"></i> Мале</span>
+            Рай на земле · <span class="dest-rating"><i class="fas fa-star"></i> 5.0</span> · <i class="fas fa-map-pin"></i> Мале
           </div>
         </div>
       </div>
       <div class="dest-card reveal reveal-d1" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">💃</div>
           <div class="dest-price">от ₽90 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Куба</div>
           <div class="dest-meta">
-            <span>Карибы</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.6</span> ·
-            <span><i class="fas fa-map-pin"></i> Варадеро</span>
+            Карибы · <span class="dest-rating"><i class="fas fa-star"></i> 4.6</span> · <i class="fas fa-map-pin"></i> Варадеро
           </div>
         </div>
       </div>
       <div class="dest-card reveal reveal-d2" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🌴</div>
           <div class="dest-price">от ₽95 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Доминикана</div>
           <div class="dest-meta">
-            <span>Карибское море</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.8</span> ·
-            <span><i class="fas fa-map-pin"></i> Пунта-Кана</span>
+            Карибское море · <span class="dest-rating"><i class="fas fa-star"></i> 4.8</span> · <i class="fas fa-map-pin"></i> Пунта-Кана
           </div>
         </div>
       </div>
       <div class="dest-card reveal reveal-d3" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="dest-img">
-          <div class="dest-emoji">🫖</div>
           <div class="dest-price">от ₽70 000</div>
         </div>
         <div class="dest-info">
           <div class="dest-name">Шри-Ланка</div>
           <div class="dest-meta">
-            <span>Природа и чай</span> · 
-            <span class="dest-rating"><i class="fas fa-star"></i> 4.7</span> ·
-            <span><i class="fas fa-map-pin"></i> Коломбо</span>
+            Природа и чай · <span class="dest-rating"><i class="fas fa-star"></i> 4.7</span> · <i class="fas fa-map-pin"></i> Коломбо
           </div>
         </div>
       </div>
@@ -490,20 +476,19 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- TOUR PACKAGES -->
+<!-- PACKAGES -->
 <section class="packages" id="packages">
   <div class="container">
     <div class="pkg-grid reveal">
       <div class="pkg-main">
-        <div>
+        <div class="pkg-main-content">
           <h2>Готовые пакеты туров</h2>
           <p>Доступные, настраиваемые и незабываемые путешествия под ключ.</p>
+          <button class="btn" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})"><i class="fas fa-th-list"></i> Все пакеты</button>
         </div>
-        <button class="btn" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})"><i class="fas fa-th-list"></i> Все пакеты</button>
       </div>
-      <div class="pkg-card reveal reveal-d1" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">
+      <div class="pkg-card reveal reveal-d1" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="pkg-card-img">
-          <div class="pkg-card-emoji">🏖️</div>
           <div class="pkg-card-icon"><i class="fas fa-umbrella-beach"></i></div>
         </div>
         <div class="pkg-card-body">
@@ -511,9 +496,8 @@ a{text-decoration:none;color:inherit}
           <p>Турция, Египет, Таиланд — проверенные отели all-inclusive с трансфером и страховкой.</p>
         </div>
       </div>
-      <div class="pkg-card reveal reveal-d2" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})" style="cursor:pointer">
+      <div class="pkg-card reveal reveal-d2" onclick="document.getElementById('contacts').scrollIntoView({behavior:'smooth'})">
         <div class="pkg-card-img">
-          <div class="pkg-card-emoji">🏔️</div>
           <div class="pkg-card-icon"><i class="fas fa-mountain"></i></div>
         </div>
         <div class="pkg-card-body">
@@ -525,31 +509,61 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- BOOKING STEPS -->
+<!-- STEPS -->
 <section class="steps">
   <div class="container">
-    <h2 class="reveal">Бронирование — это просто: 1-2-3</h2>
+    <h2 class="reveal">Бронирование — это просто</h2>
     <div class="steps-grid">
       <div class="step-card reveal">
-        <div class="step-icon"><i class="fas fa-map-marked-alt"></i></div>
+        <div class="step-num">1</div>
         <div>
           <h3>Выберите направление</h3>
           <p>Расскажите нам, куда хотите поехать, или доверьтесь нашим рекомендациям.</p>
         </div>
       </div>
       <div class="step-card reveal reveal-d1">
-        <div class="step-icon"><i class="fas fa-sliders-h"></i></div>
+        <div class="step-num">2</div>
         <div>
           <h3>Настройте под себя</h3>
           <p>Даты, бюджет, отели, экскурсии — мы подберём идеальный вариант.</p>
         </div>
       </div>
       <div class="step-card reveal reveal-d2">
-        <div class="step-icon"><i class="fas fa-plane-departure"></i></div>
+        <div class="step-num">3</div>
         <div>
           <h3>Летите отдыхать</h3>
           <p>Подтвердите бронирование и собирайте чемодан. Мы позаботимся обо всём остальном.</p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <h2 class="reveal">Моменты счастья наших туристов</h2>
+    <p class="reveal">Реальные путешествия, реальные эмоции</p>
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?w=800&h=600&fit=crop&q=80" alt="Мальдивы" loading="lazy">
+        <div class="gallery-label">🏝️ Мальдивы</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=400&h=300&fit=crop&q=80" alt="Отель" loading="lazy">
+        <div class="gallery-label">🏨 Отель 5★</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=400&h=300&fit=crop&q=80" alt="Океан" loading="lazy">
+        <div class="gallery-label">🌊 Таиланд</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=400&h=300&fit=crop&q=80" alt="Закат" loading="lazy">
+        <div class="gallery-label">🌅 Турция</div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1540541338287-41700207dee6?w=400&h=300&fit=crop&q=80" alt="Бассейн" loading="lazy">
+        <div class="gallery-label">🏊 Бассейн</div>
       </div>
     </div>
   </div>
@@ -562,19 +576,25 @@ a{text-decoration:none;color:inherit}
     <p class="reveal">Профессионалы, которые знают всё о путешествиях</p>
     <div class="team-grid">
       <div class="team-card reveal">
-        <div class="team-avatar">👩‍💼</div>
+        <div class="team-avatar">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop&q=80" alt="Анна Мальцева" loading="lazy">
+        </div>
         <h3>Анна Мальцева</h3>
         <div class="team-role">Старший менеджер</div>
         <p>Всегда на связи, учитывает все пожелания. Сотни довольных туристов благодарят Анну за незабываемый отдых.</p>
       </div>
       <div class="team-card reveal reveal-d1">
-        <div class="team-avatar">👩‍💻</div>
+        <div class="team-avatar">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&q=80" alt="Ирина Черткова" loading="lazy">
+        </div>
         <h3>Ирина Черткова</h3>
         <div class="team-role">Менеджер по туризму</div>
         <p>Эксперт по пляжному отдыху. Помогает новичкам организовать первую поездку за границу без стресса.</p>
       </div>
       <div class="team-card reveal reveal-d2">
-        <div class="team-avatar">👩‍🎤</div>
+        <div class="team-avatar">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&q=80" alt="Ольга" loading="lazy">
+        </div>
         <h3>Ольга</h3>
         <div class="team-role">Менеджер по туризму</div>
         <p>Мастер подбора идеальных отелей по бюджету. Клиенты летают через неё годами и не хотят менять.</p>
@@ -594,7 +614,7 @@ a{text-decoration:none;color:inherit}
         <div class="review-stars">★★★★★</div>
         <p class="review-text">Хочу поблагодарить агентство за профессионализм, а именно Ирину Черткову за помощь в подборе тура. Это наш первый отдых за границей. Всей семье очень понравилось!</p>
         <div class="review-author">
-          <div class="review-ava">ЕС</div>
+          <div class="review-ava"><img src="https://i.pravatar.cc/80?img=1" alt="" loading="lazy"></div>
           <div><div class="review-name">Елена С.</div><div class="review-date">Проверенный отзыв</div></div>
         </div>
       </div>
@@ -603,7 +623,7 @@ a{text-decoration:none;color:inherit}
         <div class="review-stars">★★★★★</div>
         <p class="review-text">Большое спасибо команде Онлайн Тур+ и особенно Анне, отдых получился незабываемым, все пожелания были учтены. Очень приятно работать с профессионалами!</p>
         <div class="review-author">
-          <div class="review-ava">ЕД</div>
+          <div class="review-ava"><img src="https://i.pravatar.cc/80?img=11" alt="" loading="lazy"></div>
           <div><div class="review-name">Евгений Д.</div><div class="review-date">Проверенный отзыв</div></div>
         </div>
       </div>
@@ -612,7 +632,7 @@ a{text-decoration:none;color:inherit}
         <div class="review-stars">★★★★★</div>
         <p class="review-text">Летаем 3-й год через вас, отели подбираете топчики! Цены всегда по бюджету, оперативная, грамотная работа. Оля, прям сердечко тебе!</p>
         <div class="review-author">
-          <div class="review-ava">ЕР</div>
+          <div class="review-ava"><img src="https://i.pravatar.cc/80?img=5" alt="" loading="lazy"></div>
           <div><div class="review-name">Елена Р.</div><div class="review-date">Проверенный отзыв</div></div>
         </div>
       </div>
@@ -621,7 +641,7 @@ a{text-decoration:none;color:inherit}
         <div class="review-stars">★★★★★</div>
         <p class="review-text">Спасибо Анне Мальцевой за прекрасный отдых! Всегда остаёмся довольны. Анна всегда на связи, это очень важно!</p>
         <div class="review-author">
-          <div class="review-ava">ОФ</div>
+          <div class="review-ava"><img src="https://i.pravatar.cc/80?img=9" alt="" loading="lazy"></div>
           <div><div class="review-name">Олеся Федоренко</div><div class="review-date">Проверенный отзыв</div></div>
         </div>
       </div>
@@ -630,7 +650,7 @@ a{text-decoration:none;color:inherit}
         <div class="review-stars">★★★★★</div>
         <p class="review-text">Огромное спасибо менеджеру Анне Мальцевой! Она помогла нам в ограниченные сроки отправиться в отпуск. Профессионализм на высоте!</p>
         <div class="review-author">
-          <div class="review-ava">КА</div>
+          <div class="review-ava"><img src="https://i.pravatar.cc/80?img=16" alt="" loading="lazy"></div>
           <div><div class="review-name">Кристина Афанасьева</div><div class="review-date">Проверенный отзыв</div></div>
         </div>
       </div>
@@ -639,7 +659,7 @@ a{text-decoration:none;color:inherit}
         <div class="review-stars">★★★★★</div>
         <p class="review-text">Каждый год отдыхаем с семьей и обращаюсь к Анне за помощью, она специалист своего дела! Фирма просто класс, советую каждому!</p>
         <div class="review-author">
-          <div class="review-ava">ВБ</div>
+          <div class="review-ava"><img src="https://i.pravatar.cc/80?img=12" alt="" loading="lazy"></div>
           <div><div class="review-name">Владислав Бакушин</div><div class="review-date">Проверенный отзыв</div></div>
         </div>
       </div>
@@ -647,7 +667,7 @@ a{text-decoration:none;color:inherit}
   </div>
 </section>
 
-<!-- CONTACTS / CTA -->
+<!-- CTA -->
 <section class="cta" id="contacts">
   <div class="container">
     <div class="cta-card">
@@ -660,7 +680,7 @@ a{text-decoration:none;color:inherit}
             <input type="tel" placeholder="Телефон" required>
             <input type="text" placeholder="Куда хотите поехать?">
             <textarea placeholder="Даты, бюджет, пожелания..."></textarea>
-            <button type="submit" class="btn btn-gold" style="background:linear-gradient(135deg,#D4A853,#E8C06A);color:#1A1D2B;justify-content:center"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
+            <button type="submit" class="btn" style="background:linear-gradient(135deg,#D4A853,#E8C06A);color:#1A1D2B;justify-content:center"><i class="fas fa-paper-plane"></i> Отправить заявку</button>
           </form>
         </div>
         <div class="cta-right">
@@ -712,48 +732,37 @@ a{text-decoration:none;color:inherit}
 </footer>
 
 <script>
-// Mobile menu
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('active')}
-
-// Scroll reveal
-const reveals=document.querySelectorAll('.reveal');
-const obs=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})
+var reveals=document.querySelectorAll('.reveal');
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})
 },{threshold:.1,rootMargin:'0px 0px -30px 0px'});
-reveals.forEach(el=>obs.observe(el));
-
-// Destination scroll
+reveals.forEach(function(el){obs.observe(el)});
 function scrollDest(dir){
-  const grid=document.querySelector('.dest-grid');
+  var grid=document.querySelector('.dest-grid');
   grid.scrollBy({left:dir*320,behavior:'smooth'});
 }
-
-// Form submit
 function handleSubmit(e){
   e.preventDefault();
-  const btn=e.target.querySelector('button[type="submit"]');
-  const orig=btn.innerHTML;
+  var btn=e.target.querySelector('button[type="submit"]');
+  var orig=btn.innerHTML;
   btn.innerHTML='<i class="fas fa-check"></i> Заявка отправлена!';
   btn.style.background='linear-gradient(135deg,#2ecc71,#27ae60)';
   btn.disabled=true;
-  setTimeout(()=>{
+  setTimeout(function(){
     btn.innerHTML=orig;
     btn.style.background='';
     btn.disabled=false;
     e.target.reset();
   },3000);
 }
-
-// Smooth scroll for all anchor links
-document.querySelectorAll('a[href^="#"],button[onclick]').forEach(el=>{
-  if(el.tagName==='A'&&el.getAttribute('href').startsWith('#')){
-    el.addEventListener('click',function(e){
-      const id=this.getAttribute('href');
-      if(id==='#')return;
-      const target=document.querySelector(id);
-      if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'})}
-    });
-  }
+document.querySelectorAll('a[href^="#"]').forEach(function(el){
+  el.addEventListener('click',function(e){
+    var id=this.getAttribute('href');
+    if(id==='#')return;
+    var target=document.querySelector(id);
+    if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'})}
+  });
 });
 </script>
 </body>
